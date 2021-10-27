@@ -1,3 +1,4 @@
+
 a=int(input('enter a no'))
 c=input('enter a operator')
 b=int(input('enter a no'))
@@ -38,4 +39,4 @@ while ch=='y':
        else:
            print('invalid operator')
        ch=input('want to do value(y/n)')
-
+print("Finally value of a and c is ",a,c)
