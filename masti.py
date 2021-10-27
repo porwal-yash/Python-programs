@@ -13,11 +13,11 @@ while ch=='y' or ch=='Y':
         if s==[]:
             print("stack is empty")
         else:
-            s.pop()
-            print("value is deleted from stack")
+            x=s.pop()
+            print("value is deleted from stack",x)
     else:
         print("ok")
         print("your stack is")
         print(s)
         break
-        
+    
