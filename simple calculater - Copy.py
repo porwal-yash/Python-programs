@@ -1,42 +1,54 @@
+# Program make a simple calculator
 
-a=int(input('enter a no'))
-c=input('enter a operator')
-b=int(input('enter a no'))
-if c=='+':
-    x=a+b
-    print(x)
-elif c=='-':
-    x=a-b
-    print(x)
-elif c=='*':
-    x=a*b
-    print(x)
-elif c=='/':
-    x=a/b
-    print(x)
-else:
-    print('invalid operator')
-ch=input('want to add mores values (y/n)')
-while ch=='y':
-       d=input('enter a operator')
-       e=int(input('enter no.'))
-       if d=='+':
-           s=x+e
-           print(s)
-           x=s
-       elif d=='-':
-           f=x-e
-           print(f)
-           x=f
-       elif d=='*':
-           j=x*e
-           print(j)
-           x=j
-       elif d=='/':
-           k=x/e
-           print(k)
-           x=k
-       else:
-           print('invalid operator')
-       ch=input('want to do value(y/n)')
-print("Finally value of a and c is ",a,c)
+# This function adds two numbers
+def add(x, y):
+    return x + y
+
+# This function subtracts two numbers
+def subtract(x, y):
+    return x - y
+
+# This function multiplies two numbers
+def multiply(x, y):
+    return x * y
+
+# This function divides two numbers
+def divide(x, y):
+    return x / y
+
+
+print("Select operation.")
+print("1.Add")
+print("2.Subtract")
+print("3.Multiply")
+print("4.Divide")
+
+while True:
+    # take input from the user
+    choice = input("Enter choice(1/2/3/4): ")
+
+    # check if choice is one of the four options
+    if choice in ('1', '2', '3', '4'):
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
+        
+        # check if user wants another calculation
+        # break the while loop if answer is no
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation == "no":
+          break
+    
+    else:
+        print("Invalid Input")
