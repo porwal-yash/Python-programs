@@ -1,0 +1,30 @@
+# Rigged Dice: 
+
+sample=int(input())
+for i in range(sample):
+    p=0
+    m=0
+    n=0
+    dice1=0
+    dice2=0
+    z=int(input())
+    
+    for j in range(0,z):
+       x,y=map(int, input().split())
+       p+=x
+       m+=y
+       dice1+=x
+       dice2+=y
+
+       
+       if(p!=m):
+           dice1,dice2=dice2,dice1
+           n+=1
+
+           
+    if(n%2!=0):
+        dice1,dice2=dice2,dice1
+    if(dice1>dice2):
+        print(1)
+    else:
+        print(2)
