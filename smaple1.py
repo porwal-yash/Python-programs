@@ -1,7 +1,7 @@
 #vinay
 import random
 a=input('are you ready player1 yes or no')
-b=input('Are you ready player2 yes or no')
+b=input('Are you ready player2 yes or no ok')
 c=int(input("enter your no"))
 d=int(input("enter your no"))
 print('player 1 no =',c)
