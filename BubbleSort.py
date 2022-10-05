@@ -1,5 +1,4 @@
-"""Python3 Optimized implementation of Bubble sort
-"""
+"""Python3 Optimized implementation of Bubble sort"""
 
 def bubble_sort(arr):
     n = len(arr)
