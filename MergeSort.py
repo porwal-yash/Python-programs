@@ -7,7 +7,6 @@ def binarySearch(array, x, low, high):
         # If found at mid, then return it
         if array[mid] == x:
             return mid
-
         # Search the left half
         elif array[mid] > x:
             return binarySearch(array, x, low, mid-1)
