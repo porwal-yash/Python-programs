@@ -7,6 +7,6 @@ while n !=0:
 	n = n//10
 
 
-print("The reverse of given num is",rev)
+print("The reverse of given num: ",rev)
 
 
